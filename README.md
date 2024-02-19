@@ -4,8 +4,8 @@ Inspired by [Michael Fogleman's](https://www.michaelfogleman.com/) cool [repo](h
 A target image is given. A quadtree parent is initialized as one rectangle with the average color of the target image. Every iteration, a quadtree is selected to be split into 4 children quadrants, each consisting of the average color within that quadrant. The quadtree to split is determined by which split reduces the error of the rendered image with the target image the most. 
 ## Quadtree Object
 Contains:
-- Rectangle bounds within image.
-- Rendered image within that quadrant and it's average color.
+- Rectangle bounds within the image.
+- Rendered image within that quadrant and its average color.
 - Error within said quadtree with target image and how much error could be reduced if split.
 - 4 children quadtrees.
 ## Examples:
@@ -71,4 +71,5 @@ Contains:
 
 ![Target Image: XKCD](images/xkcd.png)
 </details>
+
 
